@@ -39,3 +39,23 @@ $file_paths_only = $this->upload->multi_data('full_path');
 <br>The multi upload method does not return a boolean on success/failure due to the nature of multi file uploads, as some files can be met with an error.<br>
 You can use the **return_erray()** method and check if any errors were encountered
 
+# Available methods 
+  - 1)multi_upload (perform multi uploads)
+    - @param string $field - The name of your input element 
+    - @param bool $break - Stop uploading on error. Default = false 
+    - @param bool $delete - Deletes uploaded files on error. Runs only if break = true. Default = false
+    - @return void 
+    
+  - 2)multi_data (fetch information of all uploaded files)
+    - @param string $index - The name of the field you wish to retrieve.
+    - @return array 
+   
+  - 3)return_erray (return error messages as an array)
+    - @return array
+    
+  [CodeIgniter File Upload Class Manual](https://www.codeigniter.com/userguide3/libraries/file_uploading.html)
+      
+    
+    
+      
+
